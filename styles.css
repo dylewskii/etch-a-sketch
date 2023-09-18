@@ -1,0 +1,27 @@
+@font-face {
+    font-family: manrope;
+    src: url(fonts/Manrope[wght].woff2);
+}
+
+h1 {
+    text-align: center;
+    font-family: manrope;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.flex-container {
+    width: 480px;
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.one-box {
+    flex-basis: calc(100% / 16);
+}
