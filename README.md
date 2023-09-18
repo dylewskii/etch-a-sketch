@@ -1,2 +1,2 @@
 # etch-a-sketch
-Etch-A-Sketch game
+An Etch-A-Sketch game that lets you create your own pixel art. Just like the original classic drawing toy made in 1959.
