@@ -67,7 +67,7 @@ h1 {
     height: 34px;
 }
   
-/* Hide default HTML checkbox */
+/* hides the default HTML checkbox */
 .switch input {
     opacity: 0;
     width: 0;

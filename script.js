@@ -58,6 +58,12 @@ clearCheckbox.addEventListener("change", function (event) {
     }
 });
 
+// Resets ALL checkboxes
+function resetCheckboxes() {
+    colorCheckbox.checked = false;
+    clearCheckbox.checked = false;
+}
+
 // Activates the etch-a-sketch game on page load
 function activateEtchASketch() {
     squares.forEach(function (sq) {
