@@ -10,8 +10,6 @@ function getRandomHexColor() {
 };
 
 const flexContainer = document.querySelector(".flex-container");
-
-
 for (let i=0; i < 256; i++){
     // generates the individual squares that will
     // fill the etch-a-sketch screen
@@ -23,12 +21,14 @@ for (let i=0; i < 256; i++){
     etchSquare.style.backgroundColor = "#E3E4DB";
 }
 
-
-
 const squares = document.querySelectorAll(".one-box");
-
 squares.forEach(function (sq) {
     sq.addEventListener('mouseover', function (event) {
         sq.style.backgroundColor = getRandomHexColor();
     });
+});
+
+const checkBox = document.querySelector(".checkbox");
+checkBox.addEventListener("click", function(event) {
+
 });
