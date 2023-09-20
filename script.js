@@ -1,3 +1,7 @@
+// Slider
+const screenSizeSlider = document.querySelector(".slider");
+const sliderText = document.querySelector("#slider_text");
+
 // Returns a random Hex Color
 function getRandomHexColor() {
     // Generate a random integer between 0 and 16777215 (hexadecimal FFFFFF)
@@ -24,6 +28,21 @@ for (let i=0; i < 256; i++){
 }
 
 const squares = document.querySelectorAll(".one-box");
+
+// Handles the SLIDER being changed
+screenSizeSlider.addEventListener("input", () => {
+    const newSize = parseInt(screenSizeSlider.value);
+    if (newSize === 1){
+        sliderText.textContent = "16 x 16";
+        clearScreen()
+    } else if (newSize === 2){
+        sliderText.textContent = "32 x 32";
+        clearScreen()
+    } else if (newSize === 3) {
+        sliderText.textContent = "64 x 64";
+        clearScreen()
+    }
+});
 
 // Handles the COLOR toggle being clicked
 const colorCheckbox = document.querySelector("#checkbox_color");
@@ -58,6 +77,13 @@ clearCheckbox.addEventListener("change", function (event) {
     }
 });
 
+// // Resets the screen to grey
+function clearScreen(){
+    for (let i=0; i < squares.length; i++){
+        squares[i].style.backgroundColor = "#E3E4DB";
+    }
+};
+
 // Resets ALL checkboxes
 function resetCheckboxes() {
     colorCheckbox.checked = false;
@@ -73,5 +99,22 @@ function activateEtchASketch() {
     });
 }
 
-// Call the function to activate the game when the page loads
 activateEtchASketch();
+
+
+// // Changes class of every box on the screen
+// // changeScreenSize(1) = 16x16
+// // changeScreenSize(2) => 32x32
+// // changeScreenSize(3) = 64x64
+// // function changeSquareSize(size){
+// //     for (let i=0; i < squares.length; i++){
+// //         squares[i].className = "";
+// //         if (size === 1){
+// //             squares[i].className = "large-box";
+// //         } else if (size === 2){
+// //             squares[i].className = "medium-box";
+// //         } else if (size === 3){
+// //             squares[i].className = "small-box";
+// //         }
+// //     }
+// // }

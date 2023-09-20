@@ -39,14 +39,31 @@ h1 {
     gap: 0.5px;
 }
 
-.one-box {
+.square {
     flex-basis: calc(100% / 16);
     max-width: 25px;
     max-height: 25px;
 }
 
-.clearedOn {
-    background-color: #E3E4DB;
+/* 16x16 option */
+.large-box {
+    flex-basis: calc(100% / 16);
+    max-width: 25px;
+    max-height: 25px;
+}
+
+/* 32x32 option */
+.medium-box {
+    flex-basis: calc(100% / 32);
+    max-width: 12.5px;
+    max-height: 12.5px;
+}
+
+/* 64x64 option */
+.small-box {
+    flex-basis: calc(100% / 64);
+    max-width: 6.25px;
+    max-height: 6.25px;
 }
 
 /* CONTROLS (BUTTONS & SLIDER) */
@@ -115,6 +132,7 @@ input:checked + .checkbox_slider:before {
 #clear_text, #color_text, #slider_text{
     text-align: center;
     font-family: manrope;
+    font-size: 0.9em;
 }
 
 .btn {
