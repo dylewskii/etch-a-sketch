@@ -3,5 +3,7 @@ An Etch-A-Sketch game that lets you create your own pixel art. Just like the ori
 
 Live - https://dylewskii.github.io/etch-a-sketch/ 
 
+![etch a sketch outcome](./etchasketch_final.png)
+
 ## Future TODO:
 1. Fix grid slider (currently, the grid does not re-size inline with the slider options - 16x16, 32x32, 64x64)
